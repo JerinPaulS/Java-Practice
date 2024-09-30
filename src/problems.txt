@@ -1,0 +1,37 @@
+Week 1: Strings and Basic Operations
+Day 1: What is a String in Java? How do you create a string in Java? Write a program to check if a string is a palindrome (ignoring spaces and case).
+Day 2: How do you compare two strings in Java? What is the difference between == and .equals() for comparing strings? Write a program to find the longest substring without repeating characters.
+Day 3: How do you find the length of a string in Java? Write a program to reverse a string. Write a program to find all permutations of a given string.
+Day 4: How do you check if a string contains a specific substring in Java? Write a program to find the first occurrence of a substring in a string. Write a program to check if two strings are anagrams of each other.
+Day 5: How do you convert a string to uppercase and lowercase in Java? Write a program to count the number of vowels and consonants in a string. Write a program to find the longest common prefix among an array of strings.
+Day 6: What is the StringBuilder class in Java? Write a program to demonstrate the use of StringBuilder to concatenate strings. Write a program to count the occurrences of each character in a string and display the characters in order of their frequency.
+Day 7: Write a program to remove all spaces from a string and count the number of words in the string. Write a program to remove all duplicate characters from a string without using any additional data structures.
+
+Week 2: Arrays
+Day 8: What is an array in Java? How do you declare and initialize an array? Write a program to find the maximum product of two integers in an array.
+Day 9: Write a program to find the largest and smallest elements in an array. Write a program to find the sub-array with the maximum sum (Kadane's Algorithm).
+Day 10: Write a program to reverse an array in Java. Write a program to rotate a matrix (2D array) by 90 degrees in place.
+Day 11: How do you sort an array in Java? Write a program to sort an array using Arrays.sort(). Write a program to merge two sorted arrays into a single sorted array.
+Day 12: Write a program to find the second-largest element in an array. Write a program to find the intersection of two arrays.
+Day 13: Write a program to remove duplicate elements from an array. Write a program to find the missing number in an array of size n containing numbers from 1 to n.
+Day 14: Write a program to rotate an array by k positions to the left. Write a program to find the first repeating element in an array. The element should appear more than once and its index of the first occurrence should be the smallest.
+
+Week 3: Streams in Java 8
+Day 15: What is a Stream in Java 8? How do you create a stream from an array or a list?
+Day 16: Write a program to filter even numbers from an array using Java Streams.
+Day 17: Write a program to find the sum of all elements in an array using Java Streams.
+Day 18: Write a program to convert all strings in a list to uppercase using Streams.
+Day 19: Write a program to sort a list of strings using Streams.
+Day 20: Write a program to find the first non-repeated character in a string using Streams.
+Day 21: Write a program to count the number of occurrences of each word in a list of strings using Streams.
+
+Week 4: Java 8 Features
+Day 22: What is a lambda expression in Java? Write a program to demonstrate the use of lambda expressions with a functional interface.
+Day 23: What is the Optional class in Java 8? Write a program to demonstrate the use of Optional to avoid NullPointerException.
+Day 24: What is a method reference in Java 8? Write a program to demonstrate the use of method references.
+Day 25: What are default and static methods in interfaces in Java 8? Write an example interface that uses both default and static methods.
+Day 26: Write a program to demonstrate the use of Stream.of() to create a stream and perform some basic operations like filter(), map(), and forEach().
+Day 27: Write a program to group a list of strings by their length using Collectors.groupingBy() from Java Streams.
+Day 28: Write a program to demonstrate the use of Collectors.joining() to concatenate a list of strings with a delimiter.
+Day 29: What is LocalDate, LocalTime, and LocalDateTime in Java 8? Write a program to display the current date, time, and date-time.
+Day 30: Write a program to demonstrate the use of Stream.reduce() to find the maximum and minimum values in an array.
