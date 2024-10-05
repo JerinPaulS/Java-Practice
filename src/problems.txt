@@ -35,3 +35,187 @@ Day 27: Write a program to group a list of strings by their length using Collect
 Day 28: Write a program to demonstrate the use of Collectors.joining() to concatenate a list of strings with a delimiter.
 Day 29: What is LocalDate, LocalTime, and LocalDateTime in Java 8? Write a program to display the current date, time, and date-time.
 Day 30: Write a program to demonstrate the use of Stream.reduce() to find the maximum and minimum values in an array.
+
+1. FlatMapping
+Question: Given a list of sentences, write a program to split each sentence into words and flatten the result into a single list of words using Java Streams.
+Example:
+List<String> sentences = Arrays.asList("Java is great", "Streams are powerful");
+// Expected output: [Java, is, great, Streams, are, powerful]
+
+2. Grouping and Counting
+Question: Given a list of words, count the frequency of each word length using Java Streams.
+Example:
+List<String> words = Arrays.asList("hello", "world", "java", "streams");
+// Expected output: {5=2, 4=1, 7=1}
+
+3. Partitioning by Condition
+Question: Write a Java Streams program to partition a list of integers into two groups: even numbers and odd numbers.
+Example:
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
+// Expected output: {true=[2, 4, 6, 8], false=[1, 3, 5, 7, 9]}
+
+4. Joining Strings
+Question: Write a program using Java Streams to join a list of strings with a delimiter, converting all strings to uppercase before joining.
+Example:
+List<String> strings = Arrays.asList("java", "streams", "are", "cool");
+// Expected output: "JAVA,STREAMS,ARE,COOL"
+
+5. Finding N-th Largest Element
+Question: Write a program using Java Streams to find the n-th largest element from a list of integers.
+Example:
+List<Integer> numbers = Arrays.asList(10, 20, 35, 25, 50, 45);
+int n = 3;
+// Expected output: 35 (3rd largest number)
+
+6. Stream-based File Operations
+Question: Given a text file, write a program using Java Streams to read the file, count the number of lines, and filter out the lines that contain a specific word.
+Example:
+Path filePath = Paths.get("file.txt");
+String wordToExclude = "error";
+// Expected output: Print the lines that do not contain the word "error" and count them.
+
+7. Reduction with a Custom Collector
+Question: Write a Java Streams program to calculate the sum of squares of all even numbers from a list using a custom collector.
+Example:
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);
+// Expected output: 56 (2^2 + 4^2 + 6^2)
+
+8. Find Duplicate Elements
+Question: Write a Java Streams program to find all the duplicate elements in a list.
+Example:
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 2, 3, 5, 6, 1);
+// Expected output: [1, 2, 3] (duplicates)
+
+9. Grouping by Custom Criteria
+Question: Write a Java Streams program to group a list of employees by their departments and then by their salary ranges (e.g., 0-5000, 5001-10000, etc.).
+Hint: Use Collectors.groupingBy with a two-level grouping.
+Example:
+class Employee {
+    String name;
+    String department;
+    int salary;
+}
+List<Employee> employees = ...;
+
+10. Combining Streams
+Question: Given two lists of integers, write a Java Streams program to combine both lists, remove duplicates, and sort them in descending order.
+Example:
+List<Integer> list1 = Arrays.asList(1, 3, 5, 7);
+List<Integer> list2 = Arrays.asList(2, 3, 6, 8);
+// Expected output: [8, 7, 6, 5, 3, 2, 1]
+
+11. Finding the Longest Word
+Question: Write a program using Java Streams to find the longest word in a list of strings. If there are multiple words with the same length, return any of them.
+Example:
+List<String> words = Arrays.asList("java", "stream", "programming", "code");
+// Expected output: "programming"
+
+12. Prime Numbers Filtering
+Question: Write a Java Streams program to filter out all prime numbers from a list of integers.
+Hint: You can create a helper function to check if a number is prime and then use it in the filter() operation.
+Example:
+List<Integer> numbers = Arrays.asList(2, 3, 4, 5, 6, 7, 8, 9);
+// Expected output: [2, 3, 5, 7]
+
+13. Custom Object Sorting
+Question: Given a list of Person objects, write a Java Streams program to sort them first by their age in descending order, and if ages are equal, then by their names alphabetically.
+Example:
+class Person {
+    String name;
+    int age;
+}
+List<Person> people = Arrays.asList(new Person("Alice", 30), new Person("Bob", 25), new Person("Alice", 25));
+// Expected output: [Alice(30), Alice(25), Bob(25)]
+
+14. Finding Missing Numbers
+Question: Write a Java Streams program to find all the missing numbers in a list of integers ranging from 1 to 100.
+Example:
+List<Integer> numbers = Arrays.asList(1, 2, 3, 5, 7, 10);
+// Expected output: [4, 6, 8, 9, 11, 12, ..., 100]
+
+15. Calculating Average Age
+Question: Given a list of Person objects, write a Java Streams program to calculate the average age of all people.
+Example:
+class Person {
+    String name;
+    int age;
+}
+List<Person> people = Arrays.asList(new Person("Alice", 30), new Person("Bob", 25), new Person("Charlie", 35));
+// Expected output: 30
+
+16. Map of Object List to Field List
+Question: Write a Java Streams program that converts a list of objects (e.g., Employee) into a list of one of their attributes (e.g., name).
+Example:
+class Employee {
+    String name;
+    int salary;
+}
+List<Employee> employees = Arrays.asList(new Employee("Alice", 5000), new Employee("Bob", 6000));
+// Expected output: ["Alice", "Bob"]
+
+17. Top N Elements
+Question: Given a list of integers, write a Java Streams program to find the top N largest elements in the list.
+Example:
+List<Integer> numbers = Arrays.asList(10, 20, 35, 25, 50, 45);
+int n = 2;
+// Expected output: [50, 45]
+
+18. Frequency of Character Occurrences
+Question: Write a Java Streams program to calculate the frequency of each character in a given string.
+Example:
+String input = "java streams are powerful";
+// Expected output: {j=1, a=3, v=1, s=3, t=1, r=3, e=2, m=1, p=1, o=1, w=1, u=1, l=1}
+
+19. Parallel Streams
+Question: Write a Java Streams program to generate the first 100,000 prime numbers using parallel streams.
+Hint: Use the IntStream class and a custom method to check for primality, and then parallelize the stream.
+Expected output: List of the first 100,000 prime numbers.
+
+20. Collecting to Map
+Question: Given a list of employees, write a Java Streams program to collect them into a map where the key is the employee ID and the value is the employee object.
+Example:
+class Employee {
+    int id;
+    String name;
+    int salary;
+}
+List<Employee> employees = Arrays.asList(new Employee(1, "Alice", 5000), new Employee(2, "Bob", 6000));
+// Expected output: {1=Employee(1, "Alice", 5000), 2=Employee(2, "Bob", 6000)}
+
+21. Distinct Counting
+Question: Given a list of strings, write a Java Streams program to count the number of distinct strings in the list, ignoring case.
+Example:
+List<String> words = Arrays.asList("Java", "java", "Stream", "STREAM", "code");
+// Expected output: 3 (distinct words are: "Java", "Stream", "code")
+
+22. K Most Frequent Elements
+Question: Write a Java Streams program to find the K most frequent elements from a list of integers.
+Example:
+List<Integer> numbers = Arrays.asList(1, 2, 2, 3, 3, 3, 4, 4, 4, 4);
+int k = 2;
+// Expected output: [4, 3] (as 4 appears 4 times, and 3 appears 3 times)
+
+23. Nested Object Sorting
+Question: Given a list of Department objects, each containing a list of Employee objects, write a Java Streams program to sort each department's employees by salary.
+Example:
+class Employee {
+    String name;
+    int salary;
+}
+class Department {
+    String name;
+    List<Employee> employees;
+}
+List<Department> departments = ...;
+
+24. Summing Conditional Values
+Question: Write a Java Streams program to sum only the positive numbers from a list of integers.
+Example:
+List<Integer> numbers = Arrays.asList(-10, 15, -20, 25, 30);
+// Expected output: 70 (15 + 25 + 30)
+
+25. Custom Stream Comparator
+Question: Write a Java Streams program to sort a list of strings by their length, and if two strings have the same length, sort them alphabetically.
+Example:
+List<String> strings = Arrays.asList("java", "streams", "are", "fun", "awesome");
+// Expected output: ["are", "fun", "java", "streams", "awesome"]
